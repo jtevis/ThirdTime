@@ -18,11 +18,11 @@ public class grid_welcome2 extends AppCompatActivity
     GridView androidGridView;
 
     String[] gridViewString = {
-            "Party Planner", "Drinks Library", "Herbs Library",
+            "Party Planner", "Drinks Library", "Herbs Library", "Plan a Crop","Whats Growing", "Trade Herbs"
 
     } ;
     int[] gridViewImageId = {
-            R.drawable.partyhats, R.drawable.tree_library,R.drawable.tree_library,
+            R.drawable.partyhats, R.drawable.drinks,R.drawable.herb_lib, R.drawable.crop_plan, R.drawable.whats_growing,R.drawable.trade,
 
     };
 
