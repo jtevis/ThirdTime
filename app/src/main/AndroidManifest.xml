@@ -23,6 +23,7 @@
         <activity android:name=".pplanner"></activity>
         <activity android:name=".layout_library"></activity>
         <activity android:name=".grid_welcome2"></activity>
+        <activity android:name=".tourLayout"></activity>
     </application>
 
 </manifest>
