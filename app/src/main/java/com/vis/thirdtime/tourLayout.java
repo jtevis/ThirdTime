@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import static java.lang.reflect.Array.getLength;
+
 
 /**
  * Created by XPS13 on 6/1/2017.
@@ -19,12 +21,12 @@ public class tourLayout extends AppCompatActivity
 
         int[] listviewImage = new int[]{
                 R.drawable.partyhats, R.drawable.drinks, R.drawable.herb_lib, R.drawable.crop_plan,
-                R.drawable.whats_growing, R.drawable.trade,
+                R.drawable.whats_growing, R.drawable.trade,R.drawable.analytics,
         };
 
         String[] tourTitle = new String[]{
                 "Party Planner", "Drinks Library", "Herbs Library", "Plan a Crop",
-                "What's Growing", "Herb Trader",
+                "What's Growing", "Herb Trader","Data Analytics"
         };
 
         String[] listviewShortDescription = new String[]{
@@ -34,6 +36,7 @@ public class tourLayout extends AppCompatActivity
                 "Mallory Needs to Write Something",
                 "Mallory Needs to Write Something",
                 "Mallory Needs to Write Something",
+                "Joe Needs to Write Something",
         };
 
         @Override
@@ -43,7 +46,7 @@ public class tourLayout extends AppCompatActivity
 
             List<HashMap<String, String>> aList = new ArrayList<HashMap<String, String>>();
 
-            for (int i = 0; i < 6; i++) {
+            for (int i = 0; i < 7; i++) {
                 HashMap<String, String> hm = new HashMap<String, String>();
                 hm.put("listview_discription", listviewShortDescription[i]);
                 hm.put("listview_title", tourTitle[i]);
