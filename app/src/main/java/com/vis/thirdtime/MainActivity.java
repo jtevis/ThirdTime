@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (v.getId() == R.id.Ctour)
         {
-            Intent i = new Intent(MainActivity.this, tourLayout.class);
+            Intent i = new Intent(MainActivity.this, tourLayout2.class);
             startActivity (i);
         }
 
