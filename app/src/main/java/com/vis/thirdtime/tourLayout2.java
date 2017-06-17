@@ -1,9 +1,14 @@
 package com.vis.thirdtime;
 
+import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +22,8 @@ import java.util.List;
 public class tourLayout2 extends AppCompatActivity
 {
         // Array of strings for ListView Titl
+
+
 
         int[] listviewImage = new int[]{
                 R.drawable.partyhats, R.drawable.drinks, R.drawable.herb_lib, R.drawable.crop_plan,
@@ -66,5 +73,32 @@ public class tourLayout2 extends AppCompatActivity
             SimpleAdapter simpleAdapter = new SimpleAdapter(getBaseContext(), aList, R.layout.tour_model2, from, to);
             ListView androidListView = (ListView) findViewById(R.id.tour_listview);
             androidListView.setAdapter(simpleAdapter);
+            androidListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view,
+                                        int i, long id) {
+                    switch(i+1){
+                        case 1:
+                        /** Start a new Activity MyCards.java */
+                        /**Toast.makeText(tourLayout2.this,  "Plan a Party", Toast.LENGTH_LONG).show();*/
+                        Intent j = new Intent(tourLayout2.this, tourpartyplan.class);
+                            startActivity (j);
+                        break;
+                        case 2:
+                        /** AlerDialog when click on Exit
+                        MyAlertDialog()*/
+                        Toast.makeText(tourLayout2.this, "Find a Drink", Toast.LENGTH_LONG).show();
+                        break;
+                    }
+
+
+                }
+            });
+
+
+
+
+
         }
 }

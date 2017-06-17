@@ -31,6 +31,10 @@
             android:name=".tourLayout2"
             android:label="Social Greens Tour">
         </activity>
+        <activity
+            android:name=".tourpartyplan"
+            android:label="Social Greens Party Planner">
+        </activity>
     </application>
 
 </manifest>
