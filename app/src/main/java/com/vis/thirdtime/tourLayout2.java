@@ -25,17 +25,18 @@ public class tourLayout2 extends AppCompatActivity
 
 
 
-        int[] listviewImage = new int[]{
+        int[] listviewImage = new int[]{R.drawable.eppo_logo,
                 R.drawable.partyhats, R.drawable.drinks, R.drawable.herb_lib, R.drawable.crop_plan,
                 R.drawable.whats_growing, R.drawable.trade,R.drawable.analytics,
         };
 
         String[] tourTitle = new String[]{
-                "Party Planner", "Drinks Library", "Herbs Library", "Plan a Crop",
+                "Plant Reference","Party Planner", "Drinks Library", "Herbs Library", "Plan a Crop",
                 "What's Growing", "Herb Trader","Data Analytics"
         };
 
         String[] listviewShortDescription = new String[]{
+                "Find your favorite garden plant in Social Greens curated version of the EPPO global database",
                 "Ready for a party? Let Social Greens help to make it an event. The first step is to choose the type of party. ",
                 "Mallory Needs to Write Something",
                 "Mallory Needs to Write Something",
@@ -45,7 +46,7 @@ public class tourLayout2 extends AppCompatActivity
                 "Joe Needs to Write Something",
         };
 
-        String[] tourMore = new String[]{
+        String[] tourMore = new String[]{"more....",
             "more.....", "", "more....", "",
             "more....", "","more...."
          };
